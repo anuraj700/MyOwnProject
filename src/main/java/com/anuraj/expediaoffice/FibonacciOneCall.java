@@ -2,6 +2,7 @@
 package com.anuraj.expediaoffice;
 
 import java.util.ArrayDeque;
+import java.util.Arrays;
 import java.util.Deque;
 import java.util.Iterator;
 import java.util.Stack;
@@ -12,6 +13,32 @@ public class FibonacciOneCall {
 
 		System.out.println("\nPrinting raw value " + print(10));
 		printFibonacci(10);
+		System.out.println("\n using dynamic programming");
+		System.out.print(dyanamicFibonnaci(10));
+		System.out.println("\n using dynamic programming array");
+		System.out.print(Arrays.toString(dyanamicFibonnaciArray(10)));
+	}
+
+	private static int dyanamicFibonnaci(int n) {
+
+		int[] f = new int[n + 1];
+		f[0] = 1;
+		f[1] = 1;
+		for (int i = 2; i <= n; i++) {
+			f[i] = f[i - 1] + f[i - 2];
+		}
+		return f[n];
+	}
+
+	private static int[] dyanamicFibonnaciArray(int n) {
+
+		int[] f = new int[n + 1];
+		f[0] = 1;
+		f[1] = 1;
+		for (int i = 2; i <= n; i++) {
+			f[i] = f[i - 1] + f[i - 2];
+		}
+		return f;
 	}
 
 	private static void printFibonacci(int n) {
