@@ -75,8 +75,8 @@ public class ZeroMatrix {
 	}
 
 	private static int[][] input = { { 2, 3, 1, 2 }, { 7, 2, 2, 1 }, { 4, 0, 2, 7 } };
-	private static int rows = input[0].length;
-	private static int columns = input.length;
+	private static int rows = input.length;
+	private static int columns = input[0].length;
 
 	private static void lokesh() {
 
@@ -84,14 +84,14 @@ public class ZeroMatrix {
 		boolean isFirstColZero = false;
 		printArr(input);
 		// finding out whether first row needed to be zero
-		for (int i = 0; i < rows; i++) {
+		for (int i = 0; i < columns; i++) {
 			if (input[0][i] == 0) {
 				isFirstRowZero = true;
 				break;
 			}
 		}
 		// finding out whether first columns needed to be zero
-		for (int j = 0; j < columns; j++) {
+		for (int j = 0; j < rows; j++) {
 			if (input[j][0] == 0) {
 				isFirstColZero = true;
 				break;
@@ -107,17 +107,17 @@ public class ZeroMatrix {
 			}
 		}
 		// making required rows zero
-		for (int i = 1; i < rows; i++) {
+		for (int i = 1; i < columns; i++) {
 			if (input[0][i] == 0) {
-				for (int j = 1; j < columns; j++) {
+				for (int j = 1; j < rows; j++) {
 					input[j][i] = 0;
 				}
 			}
 		}
 		// making required columns zero
-		for (int i = 1; i < columns; i++) {
+		for (int i = 1; i < rows; i++) {
 			if (input[i][0] == 0) {
-				for (int j = 1; j < rows; j++) {
+				for (int j = 1; j < columns; j++) {
 					input[i][j] = 0;
 				}
 			}
