@@ -17,6 +17,8 @@ public class FibonacciOneCall {
 		System.out.print(dyanamicFibonnaci(10));
 		System.out.println("\n using dynamic programming array");
 		System.out.print(Arrays.toString(dyanamicFibonnaciArray(10)));
+		System.out.println();
+		printFibonacciLokesh(10);
 	}
 
 	private static int dyanamicFibonnaci(int n) {
@@ -39,6 +41,28 @@ public class FibonacciOneCall {
 			f[i] = f[i - 1] + f[i - 2];
 		}
 		return f;
+	}
+
+	public static void printFibonacciLokesh(int n) {
+
+		int[] values = new int[n];
+		for (int i = 0; i < n; i++) {
+			System.out.print(fib(i, values) + " ");
+		}
+	}
+
+	public static int fib(int no, int[] values) {
+
+		if (no == 0 || no == 1) {
+			values[no] = no;
+			return values[no];
+		}
+		if (values[no - 1] > 0 && values[no - 2] >= 0) {
+			values[no] = values[no - 1] + values[no - 2];
+		}
+		return values[no];
+		/*values[no] = fib(no - 1, values) + fib(no - 2, values);
+		return values[no];*/
 	}
 
 	private static void printFibonacci(int n) {
