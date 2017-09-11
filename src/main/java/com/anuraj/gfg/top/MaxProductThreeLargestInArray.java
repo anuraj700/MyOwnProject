@@ -14,6 +14,8 @@ public class MaxProductThreeLargestInArray {
 		int x = Integer.MIN_VALUE; //first largest
 		int y = Integer.MIN_VALUE;//Second largest
 		int z = Integer.MIN_VALUE;//third largest
+		int a = Integer.MAX_VALUE; // first smallest
+		int b = Integer.MAX_VALUE; // second smallest
 		for (int i = 0; i < arr.length; i++) {
 			if (arr[i] > x) {
 				z = y;
@@ -25,11 +27,6 @@ public class MaxProductThreeLargestInArray {
 			} else if (arr[i] > z) {
 				z = arr[i];
 			}
-		}
-		//System.out.println(x + " " + y + " " + z);
-		int a = Integer.MAX_VALUE; // first smallest
-		int b = Integer.MAX_VALUE; // second smallest
-		for (int i = 0; i < arr.length; i++) {
 			if (arr[i] < a) {
 				b = a;
 				a = arr[i];
@@ -37,12 +34,14 @@ public class MaxProductThreeLargestInArray {
 				b = arr[i];
 			}
 		}
+		//System.out.println(x + " " + y + " " + z);
 		//System.out.println(a + " " + b);
-		int temp = y * z;
-		if (z < 0 && x > 0) {
-			temp = Math.max(temp, a * b);
-		}
-		return x * temp;
+		/*	int temp = y * z;
+			if (z < 0 && x > 0) {
+				temp = Math.max(temp, a * b);
+			}
+			return x * temp;*/
+		return Math.max(a * b * x, x * y * z);
 	}
 
 	public static void main(String[] args) {
