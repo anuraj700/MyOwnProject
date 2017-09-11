@@ -1,5 +1,5 @@
 
-package com.anuraj.expediaoffice;
+package com.anuraj.expoff;
 
 import java.util.Arrays;
 import java.util.Scanner;

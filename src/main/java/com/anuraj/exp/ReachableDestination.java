@@ -1,4 +1,4 @@
-package com.anuraj.expedia;
+package com.anuraj.exp;
 
 import java.util.Scanner;
 
