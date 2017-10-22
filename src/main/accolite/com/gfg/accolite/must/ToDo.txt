@@ -1,0 +1,3 @@
+http://practice.geeksforgeeks.org/problems/subset-sum-problem/0/?ref=self
+http://www.geeksforgeeks.org/dynamic-programming-subset-sum-problem/
+http://www.geeksforgeeks.org/dynamic-programming-set-18-partition-problem/
