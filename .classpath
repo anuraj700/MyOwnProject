@@ -5,6 +5,9 @@
 	<classpathentry kind="src" path="src/main/behavioraldesignpatters"/>
 	<classpathentry kind="src" path="src/main/amazon"/>
 	<classpathentry kind="src" path="src/main/accolite"/>
+	<classpathentry kind="src" path="src/main/hackerrank"/>
+	<classpathentry kind="src" path="src/gfg/top10algo"/>
+	<classpathentry kind="src" path="src/main/inmobi"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.7"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
