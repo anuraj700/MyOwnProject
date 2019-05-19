@@ -8,6 +8,8 @@
 	<classpathentry kind="src" path="src/main/hackerrank"/>
 	<classpathentry kind="src" path="src/gfg/top10algo"/>
 	<classpathentry kind="src" path="src/main/inmobi"/>
+	<classpathentry kind="src" path="src/main/adobe"/>
+	<classpathentry kind="src" path="src/main/ibit"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.7"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
