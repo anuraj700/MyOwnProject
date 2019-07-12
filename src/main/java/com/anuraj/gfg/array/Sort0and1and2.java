@@ -14,7 +14,8 @@ public class Sort0and1and2 {
 	2: swap a[Mid] and a[Hi]; Hi–*/
 	
 	public static void main(String[] args) {
-		int arr[] = {0, 1, 1, 0, 1, 2, 1, 2, 0, 0, 0, 1}; 
+		//int arr[] = {0, 1, 1, 0, 1, 2, 1, 2, 0, 0, 0, 1}; 
+		int arr[] = {0, 1, 1, 0, 1, 1, 1, 1, 0, 0, 0, 1}; 
         int arr_size = arr.length; 
         sort012(arr, arr_size); 
         System.out.println("Array after seggregation "); 
